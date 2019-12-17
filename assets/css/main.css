@@ -1957,8 +1957,8 @@
 		button.alt,
 		.button.alt {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 2px #e5474b;
-			color: #e5474b !important;
+			box-shadow: inset 0 0 0 2px #404040;
+			color: #303030 !important;
 		}
 
 			input[type="submit"].alt:hover,
@@ -1966,7 +1966,7 @@
 			input[type="button"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background: #fceced;
+				background: #E8E8E8;
 			}
 
 			input[type="submit"].alt:active,
@@ -1974,7 +1974,7 @@
 			input[type="button"].alt:active,
 			button.alt:active,
 			.button.alt:active {
-				background-color: #f9dadb;
+				background-color: #D0D0D0;
 			}
 
 			input[type="submit"].alt.icon:before,
@@ -3514,11 +3514,13 @@
 			}
 
 		#banner h1 {
-			font-size: 2em;
+			font-size: 1.5em;
 			margin: 0 0 1em 0;
 			padding: 0;
 			letter-spacing: 3px;
 			font-weight: 700;
+			-webkit-text-stroke-width: 1px;
+  			-webkit-text-stroke-color: black;
 		}
 
 			#banner h1 span {
@@ -3751,10 +3753,10 @@
 /* Footer */
 
 	#footer {
-		background-color: #e5474b;
+		background-color: #303030;
 		color: #f2a3a5;
 		padding: 4em 0 2em 0;
-		background: #e5474b;
+		background: #303030;
 	}
 
 		#footer input, #footer select, #footer textarea {
@@ -3791,7 +3793,7 @@
 		#footer input[type="button"],
 		#footer button,
 		#footer .button {
-			background-color: #5a5a5a;
+			background-color: #ffffff;
 			color: #ffffff !important;
 		}
 
@@ -3945,8 +3947,8 @@
 			padding: 0;
 		}
 
-			#footer .copyright a {
-				color: #f2a3a5;
+			#footer .copyright {
+				color: #707070;
 			}
 
 		@media screen and (max-width: 980px) {
