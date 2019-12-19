@@ -1,37 +1,16 @@
-console.log('it works')
+var submit_button = document.getElementById("submit_button");
 
- $(document).ready(function(){
- 	$('.submit1').click(function(event){
- 		console.log('clicked that shit');
-
- 		var email = $('.email').val();
- 		var name = $('.name').val();
- 		var message = $('.message').val();
- 		var statusElm = $('.status');
- 		statusElm.empty();
-
- 		if(email.length >5 && email.includes('@') && email.includes('.')){
- 			statusElm.append('<div>email is valid</div>');
- 		} else {
- 			event.preventDefault();
- 			alert('<div>email is NOT valid</div>');
- 		}
-
- 		if(message.length >2){
- 			statusElm.append('<div>Message is valid</div>');
- 		} else {
- 			event.preventDefault();
- 			statusElm.append('<div>Message is Not valid</div>');
- 		}
-
- 		 if(name.length >1){
- 			statusElm.append('<div>Name is valid</div>');
- 		} else {
- 			event.preventDefault();
- 			statusElm.append('<div>Name is Not valid</div>');
- 		}
- 	});
- });
+submit_button.addEventListener("click", function(e) {
+  var required = document.querySelectorAll("input[required]");
+  
+  required.forEach(function(element) {
+    if(element.value.trim() == "") {
+      element.style.backgroundColor = "#ffb3b3";
+    } else {
+      element.style.backgroundColor = "#303030";
+    }
+  });
+});
 /*
 	Introspect by TEMPLATED
 	templated.co @templatedco
