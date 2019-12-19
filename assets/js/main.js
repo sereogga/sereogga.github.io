@@ -1,16 +1,4 @@
-var submit_button = document.getElementById("submit_button");
 
-submit_button.addEventListener("click", function(e) {
-  var required = document.querySelectorAll("input[required]");
-  
-  required.forEach(function(element) {
-    if(element.value.trim() == "") {
-      element.style.backgroundColor = "#ffb3b3";
-    } else {
-      element.style.backgroundColor = "#303030";
-    }
-  });
-});
 /*
 	Introspect by TEMPLATED
 	templated.co @templatedco
@@ -83,3 +71,17 @@ submit_button.addEventListener("click", function(e) {
 	});
 
 })(jQuery);
+
+var submit_button = document.getElementById("submit_button");
+
+submit_button.addEventListener("click", function(e) {
+  var required = document.querySelectorAll("input[required]");
+  
+  required.forEach(function(element) {
+    if(element.value.trim() == "") {
+      element.style.backgroundColor = "#ffb3b3";
+    } else {
+      element.style.backgroundColor = "#303030";
+    }
+  });
+});
